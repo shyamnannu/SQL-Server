@@ -1,0 +1,1 @@
+SELECT  INTO #TSMContents FROM OPENROWSET('SQLNCLI', 'Server=SEGOTN2297-SQL2SQL2;Trusted_Connection=yes;','exec master.dbo.xp_view_tsmcontents @tsmfilespace = ’SEGOTN2297-SQL2SQL2DQULISP’,@tsmconfigfile = ‘DSEGOTN2297-SQL2_LSdsm.opt', @tsmarchive = 1')
